@@ -242,7 +242,7 @@ h2{
   }
 
 
-  @media screen and (max-width:500px){
+  @media screen and (min-width: 100px) and (max-width:500px){
     
   .page{
     display: flex;
