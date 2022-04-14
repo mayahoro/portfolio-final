@@ -1,0 +1,281 @@
+
+nav li{
+    padding: 12px;
+}
+
+
+
+.active{
+    background-color: #E5CCFF;
+    font-weight: bold;
+    border: 5px solid #4C0099;
+}
+
+
+
+.page{
+    background-color: #CCCCFF;
+    font-family:'Raleway', serif;
+    display: block;
+
+}
+
+img{
+    border: solid #4C0099 5px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+
+header{
+    font-weight: bold;
+
+}
+
+
+h1{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    font-size: 24px;
+   
+    
+}
+
+h2{
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  font-size: 24px;
+ 
+}
+
+
+ footer{
+     background-color: #E5CCFF;
+     padding: 32px 8px;
+ }
+
+ body{
+    background-image:  url("../images/marbleback.jpg");
+ }
+
+ .skip{  
+    color:#4C0099; 
+    text-decoration: none; 
+    position: relative;
+    top: -900px;
+} 
+
+ .skip:focus { 
+    top: 0px;
+}
+
+ /*
+ img:nth-last-child(2n){
+    animation: move 5s ease;
+}
+*/
+.flowers{
+  background-image:url("../images/butterfly.JPG");
+    min-height: 550px; 
+    background-color: #707070;
+    background-attachment: fixed;
+    background-position: center 75%;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    object-fit: cover; 
+    object-fit: center; 
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column{
+  flex:80%;
+  padding: 0 4px;
+}
+
+.column img{
+  margin-top: 8px;
+  vertical-align: middle;
+  
+}
+
+ .image-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content:center;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+h2{
+    animation: move 5s ease;
+}
+ @keyframes move {
+    from {justify-content: center; opacity: 0;}
+    to {justify-content: center; opacity: 1;}
+  }
+
+  @media screen and (prefers-reduced-motion: reduce){
+    h1{
+        animation:none;
+    }
+    .flip-card .flip-card-inner {
+      transform: rotateY(180deg);
+  }
+
+
+  }
+
+  @media screen and (min-width: 900px) {
+    .content{
+        display: block;
+    }
+
+    header{
+      position: sticky;
+      top:0;
+    }
+
+    /* .container img{
+      border: none;
+      box-sizing: border-box;
+      padding: 15px;
+      display: grid;
+      grid-template-columns: repeat(4);
+      grid-auto-rows: 175px;
+    } */
+
+    div.image--gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 40vw);
+    grid-gap: 100px;
+  
+    }
+
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 2%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    color: white;
+  }
+
+
+
+   .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  #rocky{
+    width: 200px;
+    height: 200px;
+  }
+
+  .flip-card-back {
+    background-color:#E5CCFF;
+    color: black;
+    transform: rotateY(180deg);
+   
+  }  
+
+
+  @media screen and (prefers-reduced-motion: reduce){
+    h2{
+        animation:none;
+    }
+    .flip-card .flip-card-inner {
+      transform: rotateY(180deg);
+  }
+    h1{
+      position: relative;
+    }
+
+  
+    .flowers{
+      background-attachment: initial;
+    }
+
+  }
+
+
+  @media screen and (max-width:500px){
+    
+  .page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.content > .image-gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img{
+  border: none;
+  
+}
+
+  header{
+    background-color: #E5CCFF;
+    position: sticky;
+    top:0;
+  }
+
+  }
