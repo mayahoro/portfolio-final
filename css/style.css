@@ -152,6 +152,7 @@ h2{
     }
 
     header{
+      background-color: #E5CCFF;
       position: sticky;
       top:0;
     }
@@ -193,7 +194,7 @@ h2{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
     transform: rotateY(180deg);
   }
   
@@ -209,12 +210,6 @@ h2{
     color: white;
   }
 
-
-
-   .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
   #rocky{
     width: 200px;
     height: 200px;
@@ -224,7 +219,7 @@ h2{
     background-color:#E5CCFF;
     color: black;
     transform: rotateY(180deg);
-   
+
   }  
 
 
